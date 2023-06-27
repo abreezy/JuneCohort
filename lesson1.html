@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <title>Fundamentals of HTML</title>
+        <title>HTML Semantics Lesson 1 </title>
     </head>
     <body>
-        <h1>This is the biggest in html</h1>
-        <h2>This is the second biggest in html</h2>
-        <h3>This is the subheading 3</h3>
-        <h4>This is the subheading 4</h4>
-        <h5>This is the subheading 5</h5>
-        <h6>This is the subheading 6</h6>
+        <header>
+            <h1>Brownie Recipe</h1>
+            <p>Thius is my recipe for making brownies</p>
+        </header>
+        <main>
+            <h2>Steps required</h2>
+            <!--ordered list below-->
+            <ol>this is my orderd list
+                <!--list element-->
+                <li>step 
+                    <ul>
+                        <li>sub unordered list
+                            <ol>sub-sub ordered list</ol>
+                        </li>
+                    </ul>
+                </li>
+                <li>step</li>
+                <li>step</li>
+                <li>step</li>
+                <li>step</li>
+            </ol>
+            <ul>this is my unordered list
+                <!--this is my unordered list-->
+                <li>step</li>
+                <li>step</li>
+                <li>step</li>
+                <li>step</li>
+                <li>step</li>
+            </ul>
+            <li>this list item doesn't have an ordered/unordered parent</li>
+            <br>
+            <br>
+            <a href="https://www.w3schools.com/tags/tag_acronym.asp" target="_blank">content goes here</a>
+            <a href="https://www.lipsum.com/" id="para" target="_blank"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</a> </p>
+            <a href="https://www.w3schools.com/tags/tag_acronym.asp" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Ours_brun_parcanimalierpyrenees_1.jpg" alt="bear" width="200px" height="200px"></a>
 
-        <p>paragraph about me</p>
+        </main>
     </body>
 </html>
