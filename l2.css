@@ -1,0 +1,32 @@
+div {
+    background-color: pink;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+main {
+    border: 1px solid black;
+    background-color: grey;
+    width: 50%;
+}
+/* if you want to call on an id use # */
+#first-div {
+    background-color: blue;
+}
+/* if you want to call on a class use . */
+li {
+    color: blue;
+}
+header nav ol li {
+    color: red;
+}
+body {
+    background-color: beige;
+    color: purple;
+}
+a {
+    margin: 10px;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
