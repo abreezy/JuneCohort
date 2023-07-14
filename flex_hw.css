@@ -14,7 +14,6 @@ nav ul {
     justify-content: right;
 }
 nav ul li {
-    display: block;
     padding: 1px 10px;
 }
 li a {
@@ -26,13 +25,14 @@ nav ul li a:hover {
     background-color: orange;
 }
 .flex-container {
-    background-color: blanchedalmond;
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
+    margin: auto;
     flex-wrap: wrap;
-    align-items:flex-start;
-    padding-left: 5%;   
-    padding-right: 5%;
+    width: 70%;
+}
+main {
+    background-color: blanchedalmond;
 }
 img {
     width: 100%;
@@ -49,8 +49,7 @@ img {
 }
 .flex-container div {
     width: 15%;
-    margin: 1px;
-
+    margin: 10px;
 }
 img {
     width: 100%;
