@@ -2,13 +2,13 @@
 
 let hero = "spiderman"
 if (hero === "superman") {
-    console.log("hero is a DC character")
+    console.log(`${hero} is a DC character`)
 }
 else if (hero === "spiderman") {
-    console.log("hero is a Marvel character")
+    console.log(`${hero} is a Marvel character`)
 }
 else {
-    console.log("hero not in database")
+    console.log(`${hero} not in database`)
 }
 
 /* write a conditional statement taking age as variable and what year group they will be in a school
@@ -16,8 +16,10 @@ else {
 (if this does not make sense please watch the summary video or the youtube video pasted above) 
 */
 
-let age = 18
-if (age >= 11 && age <= 16) {
+let age = 17
+if (typeof age != "number") {
+    console.log("error")
+} else if (age >= 11 && age <= 16) {
     console.log("student is in secondary school")
 } else if (age > 16 && age <= 18) {
     console.log("student is in college")
@@ -50,4 +52,16 @@ if (day === "monday" || day === "tuesday" || day === "wednesday" || day === "thu
     console.log(`${day} is a weekend`)
 } else {
     console.log("Not possible")
+}
+
+// nested conditional
+var arr = [1,2,3,4,5]
+if(typeof arr != "object") {
+    console.log("error")
+} else {
+    if(arr.length >= 5 && arr.length < 10) {
+        console.log("list has correct number of items")
+    } else {
+        console.log("error incorrect number of items")
+    }
 }
