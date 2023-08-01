@@ -2,10 +2,10 @@
 This will be entire up to you as to what the conditional statement is on. (if this does not make sense please refer back to the recording)
 */
 
-var name = "harry".toUpperCase()
+var name = "harry"
 if (typeof name != "string") {
     console.log("error")
-} else if (name === "HARRY") {
+} else if (name.toUpperCase() === "HARRY") {
     console.log("hi HARRY")
 } else {
     console.log("whispers: hi harry")
@@ -50,3 +50,26 @@ if (typeof num3 === "number") {
     }
 }
 
+///Abdulkadir's method
+var operation = "addition"
+
+
+if (typeof operation === "string") {
+    switch (operation) {
+        case "addition":
+            console.log(num1+num2)
+            break
+        case "subtraction":
+            console.log(num1-num2)
+            break
+        case "multiplication":
+            console.log(num1*num2)
+            break
+        case "division":
+            console.log(num1/num2)
+            break
+        default:
+            console.log("don't recognise that operator")
+            break
+    }
+}
