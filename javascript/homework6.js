@@ -33,7 +33,7 @@ function sleepDebt() {
         console.log("You overslept by", sleep - totalSleep, "hours")
     }
 }
-sleepDebt()
+//sleepDebt()
 /* Fahrenheit to kelvin converter
 create a function that converts fahrenheit to kelvin
 */
@@ -48,3 +48,57 @@ tempChangeToK(50)
 using the previous homework from the [Guest speaker + Homework](https://www.notion.so/Guest-speaker-Homework-00db6598608d462d98dbebdeb04a19f9?pvs=21) 
 reanswer the questions using functions
 */
+function fizzBuzz() {
+    for (let i = 1; i <= 100; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz")
+    } else if (i % 5 === 0) {
+        console.log("Buzz")
+    } else if (i % 3 === 0) {
+        console.log("Fizz")
+    } else {
+        console.log(i)
+        }
+    }
+}
+fizzBuzz()
+
+function wordTranslate(phrase) {
+var equivalent = ""
+for (let i = 0; i < phrase.length; i++) {
+    if (phrase[i].toLowerCase() === "a" || phrase[i].toLowerCase() === "e" || phrase[i].toLowerCase() === "i" || phrase[i].toLowerCase() === "o" || phrase[i].toLowerCase() === "u") {
+        equivalent = equivalent.concat(phrase[i])
+    }
+    if (phrase[i].toLowerCase() === "e" || phrase[i].toLowerCase() === "u"){
+        equivalent = equivalent.concat(phrase[i])
+    }
+}
+console.log(equivalent.toUpperCase())
+}
+wordTranslate("turpentine and turtles")
+
+
+function pallindrome(word) {
+    word.split('').reverse().join('')
+    if (word === word.split('').reverse().join('')) {
+        console.log(`${word} is a palindrome`)
+    } else {
+        console.log(`${word} is not a palindrome`)
+    }
+}
+pallindrome("eye")
+
+function pinGen(length) {
+    var pin = ""
+    if (typeof length != "number") {
+        console.log("error, wrong data type")
+    } else {
+        for (let i = 0; i < length; i++) {
+            var num = Math.floor(Math.random() * length).toString()
+            pin += num
+        }
+        console.log(`Length is ${length}`)
+        console.log(`Pin is ${pin}`)
+    }
+}
+pinGen(6)
