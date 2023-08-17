@@ -1,36 +1,110 @@
 body {
-    padding-left: 1%;
-    padding-right: 1%;
+    font-family: arial, sans-serif;
+    scroll-behavior: smooth;
+    padding-left: none;
+    padding-right: none;
     width: 80%;
     margin: auto;
+    background-color: #104547;
+    animation: fadeIn is ease-in-out forwards; /*Apply fade-in animation */
 }
-header {
-    padding: 1px 1px;
+#home {
+    padding-top: 15%;
+    padding-bottom: 0%;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4B5358;
+    padding: 10px 0;
 }
 nav ul {
-    padding: 0;
-    list-style-type: none;
+    list-style: none;
     display: flex;
-    justify-content: right;
+    justify-content: space-around;
 }
-nav ul li {
-    padding: 1px 10px;
-}
-li a {
+nav a {
     text-decoration: none;
-    color: black;
-    padding: 10px 10px;
+    color: #D2D6EF;
+    transition: color 0.3s ease-in-out;
 }
 nav ul li a:hover {
-    background-color: orange;
+    color: #6cf;
+}
+#about {
+    padding: 0px;
+    text-align: justify;
 }
 .flex-container {
+    padding: auto;
     display: flex;
+    flex-direction: column;
     justify-content:center;
     margin: auto;
     flex-wrap: wrap;
     width: 70%;
 }
 main {
-    background-color: blanchedalmond;
+    background-color: #104547;
 }
+#projects {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #AF929D;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+#projects img {
+    flex: 1; /* Distribute available space equally among images */
+    max-width: 100%; /* Ensure images don't exceed their original size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add spacing between images */
+}
+
+#certificates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+#certificates img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+p {
+    color: #D2D6EF;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Vertical shift added for the animation */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.slide-in {
+    position: relative;
+    left: -200%; /* Initially position the element outside the viewport */
+    transition: left 0.5s ease-in-out;
+  }
+.slide-out {
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease-in-out;
+  }
