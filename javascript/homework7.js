@@ -17,3 +17,46 @@ function hasRepeats(phrase) {
     return phrase.join('')
 }
 console.log(hasRepeats(phrase))
+
+// Q1 solution
+console.log(Math.max(...array))
+function findLargestValue(array) {
+    var list = [0]
+    for (let i = 0; i < array.length; i++) {
+        if (list[0] < array[i]) {
+            console.log(list)
+            console.log(list[0] > array[i])
+            list.shift()
+            list.push(array[i])
+        }
+    }
+    console.log(list)
+}
+findLargestValue(array)
+
+// Q2 solution
+/*var word1 = "thequickbrownfoxjumpsoverthelazydog"
+var word2 = []
+function repeatedCharacters(word) {
+    word = word1.split('')
+    for (let i = 0; i < word.length; i++) {
+        if (word2.includes(word[i])) {
+            console.log("nothing")
+        } else {
+            word2.push(word[i])
+        }
+    }
+    console.log(word2.join(''))
+}
+repeatedCharacters(word1)
+*/
+
+var word1 = "thisissomethingthatcontainsnothing"
+var word2 = []
+
+for (let i = 0; i < word1.split('').length; i++) {
+    if (!word2.includes(word1.split('')[i])) {
+        word2.push(word1.split('')[i])
+    }
+}
+console.log(word2.join(''))
