@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial scale=1.0">
         <link rel="stylesheet" href="port.css">
-        <script src="slide_in_anim.js"></script>
         <title>Abeer Shahid</title>
     </head>
     <body>
         <header>
-            <nav>
+            <!-- Navigation Bar -->
+            <nav id="nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -18,47 +18,81 @@
                     <li><a href="#contact">Contact me</a></li>
                 </ul>
             </nav>
-            <div id="home" class="slide-in">
-            <h2>Abeer Shahid</h2>
+            <script src="navScroll.js"></script>
+            <div id="home">
+            <h1>Abeer Shahid</h1>
             </div>
-            <button id="animateButton">Animate</button>
         </header>
-        <div id="welcome">
+          <!-- About Section -->
+        <div id="about">
             <h3>Welcome to my portfolio</h3>
-        </div>
-        <div id="about" class="slide-in">
             <h3>About me</h3>
             <p>I'm a controls system engineer working in the pharmaceutical industry. I'm looking to enter the tech industry as I have a passion for software development. I'm currently learning many technologies such as: JavaScript, HTML/CSS, NodeJS, React. </p>
+            <img src="https://media.licdn.com/dms/image/C4D03AQFCGeTiBhNvdw/profile-displayphoto-shrink_200_200/0/1602855640834?e=1698883200&v=beta&t=9dyI58ciey_D-lSGC2ksyaIbNdyW4qrno-vKC-adpug" alt="Abeer Shahid">
         </div>
         <main>
+             <!-- Projects Section -->
             <div id="projects" class="flex-container">
+                <h2>Projects</h2>
                 <div id="flex-child-1">
+                    <a href="https://github.com/abreezy?tab=repositories" target="_blank">
                     <img src="https://www.computerhope.com/jargon/j/javascript.png" alt="project 1">
-                    <p>JavaScript project</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </a>
                 </div>
                 <div id="flex-child-2">
+                    <a href="https://github.com/abreezy?tab=repositories" target="_blank">
                     <img src="https://dev.java/assets/images/java-logo-vert-blk.png" alt="project 2">
-                    <p>Java project</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    </a>
                 </div>
                 <div id="flex-child-3">
+                    <a href="https://github.com/abreezy?tab=repositories" target="_blank">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="project 3">
-                    <p>Python project</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    </a>
                 </div>
             </div>
+            <!-- Certificates Section -->
             <div id="certificates" class="flex-container">
+                <h2>Certificates</h2>
                 <div id="flex-child-1">
-                    <img src="Introduction_to_front_end_development_Page_1.jpeg" alt="cert 1">
+                    <a href="Introduction_to_front_end_development_Page_1.jpeg" target="_blank">
+                    <img src="Introduction_to_front_end_development_Page_1.jpeg" alt="Intro to front-end development">
+                    </a>
                 </div>
                 <div id="flex-child-2">
-                    <img src="Programming_with_Javascript_Page_1.jpeg" alt="cert 2">
+                    <a href="Programming_with_Javascript_Page_1.jpeg" target="_blank">
+                    <img src="Programming_with_Javascript_Page_1.jpeg" alt="Programming with JavaScript">
+                    </a>
                 </div>
                 <div id="flex-child-3">
-                    <img src="Version Control_Page_1.jpeg" alt="cert 3">
+                    <a href="Version Control_Page_1.jpeg" target="_blank">
+                    <img src="Version Control_Page_1.jpeg" alt="Version controls">
+                    </a>
+                </div>
+                <div id="flex-child-4">
+                    <a href="HTML and CSS in Depth_Page_1.jpeg" target="_blank">
+                    <img src="HTML and CSS in Depth_Page_1.jpeg" alt="HTML and CSS in depth">
+                    </a>
                 </div>
             </div>
+            <!-- Contact Section -->
             <div id="contact">
-                <h2>Contact Me</h2>
-                <p>You can reach me at abeer.shahid1@gmail.com</p>
+                <section> 
+                    <h2>Contact Me</h2>
+                </section>
+                <!-- Contact Buttons -->
+                <section id="buttons">
+                <a href="mailto:abeer.shahid1@gmail.com" target="_blank">
+                    <button id="email">Click to email me</button>
+                <a href="https://github.com/abreezy" target="_blank">
+                        <button id="Github">Click for my Github</button>
+                </a>
+                <a href="https://www.linkedin.com/in/abeershahid/" target="_blank">
+                    <button id="LinkedIn">Click for my LinkedIn</button>
+                </a>
+                </section>
             </div>
         </main>
     </body>
